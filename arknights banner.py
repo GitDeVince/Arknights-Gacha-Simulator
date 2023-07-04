@@ -1,6 +1,6 @@
 # testing 
 
-# arknights standard banner roll thing simulation
+# Arknights Gacha Simulator
 # rates for gacha here:
 # 2% for 6*, 8% for 5*, 50% for 4*, and 40% for 3*. Featured operators in banner will have a 50% chance to happen after the first check
 # starting at 50, there will be a 2% increase in finding a 6* until it shines
@@ -11,9 +11,9 @@ import string
 import time
 
 #this is for the user to see when pulling in gacha
-sixname = ["Exusiai", "Siege", "Ifrit", "Eyjafjalla", "Angelina", "Shining", "Nightingale", "Hoshiguma", "Saria", "SilverAsh", "Skadi", "Ch'en", "Schwarz", "Hellagur", "Magallan", "Mostima", "Blaze", "Aak", "Ceobe", "Bagpipe", "Rosa (Poca)", "Suzuran", "Phantom", "Weedy", "Thorns", "Eunectes", "Surtr", "Blemishine", "Mudrock", "Mountain", "Archetto", "Saga", "Passenger", "Kal'tsit", "Carnelian", "Pallas", "Mizuki", "Saileach", "Fartooth", "Flametail", "Gnosis", "Lee", "Goldenglow", "Fiammetta", "Irene", "Ebenholz", "Pozëmka", "Dorothy", "Mlynar", "Stainless", "Penance"]
+sixname = ["Exusiai", "Siege", "Ifrit", "Eyjafjalla", "Angelina", "Shining", "Nightingale", "Hoshiguma", "Saria", "SilverAsh", "Skadi", "Ch'en", "Schwarz", "Hellagur", "Magallan", "Mostima", "Blaze", "Aak", "Ceobe", "Bagpipe", "Rosa", "Suzuran", "Phantom", "Weedy", "Thorns", "Eunectes", "Surtr", "Blemishine", "Mudrock", "Mountain", "Archetto", "Saga", "Passenger", "Kal'tsit", "Carnelian", "Pallas", "Mizuki", "Saileach", "Fartooth", "Flametail", "Gnosis", "Lee", "Goldenglow", "Fiammetta", "Irene", "Ebenholz", "Pozemka", "Dorothy", "Mlynar", "Stainless", "Penance"]
 
-fivename = ["Ptilopsis", "Zima", "Texas", "Franka", "Lappland", "Specter", "Blue Poison", "Platinum", "Meteorite", "Skyfire", "Mayer", "Silence", "Warfarin", "Nearl", "Projekt Red", "Liskarm", "Croissant", "Provence", "Firewatch", "Cliffheart", "Pramanix", "Istina", "Sora", "Manticore", "FEater", "Nightmare", "Swire", "Glaucus", "Astesia", "Executor", "Waai Fu", "GreyThroat", "Broca", "Reed", "Hung", "Leizi", "Sesa", "Leonhardt", "Ayerscarpe", "Asbestos", "Tsukinogi", "Shamare", "Elysium", "Andreana", "Flint", "April", "Aosta", "Whisperain", "Kafka", "Iris", "Mr.Nothing", "Toddifons", "Akafuyu", "Kirara", "La Pluma", "Mulberry", "Ashlock", "Corroserum", "Aurora", "Blacknight", "Quercus", "Kazemaru", "Windflit", "Hibiscus the Purifier", "Cantabile", "Greyy the Lightningbearer", "Proviso", "Paprika", "Lunacub"]
+fivename = ["Ptilopsis", "Zima", "Texas", "Franka", "Lappland", "Specter", "Blue Poison", "Platinum", "Meteorite", "Skyfire", "Mayer", "Silence", "Warfarin", "Nearl", "Projekt Red", "Liskarm", "Croissant", "Provence", "Firewatch", "Cliffheart", "Pramanix", "Istina", "Sora", "Manticore", "FEater", "Nightmare", "Swire", "Glaucus", "Astesia", "Executor", "Waai Fu", "GreyThroat", "Broca", "Reed", "Hung", "Leizi", "Sesa", "Leonhardt", "Ayerscarpe", "Asbestos", "Tsukinogi", "Shamare", "Elysium", "Andreana", "Flint", "April", "Aosta", "Whisperain", "Kafka", "Iris", "Mr. Nothing", "Toddifons", "Akafuyu", "Kirara", "La Pluma", "Mulberry", "Ashlock", "Corroserum", "Aurora", "Blacknight", "Quercus", "Kazemaru", "Windflit", "Hibiscus the Purifier", "Cantabile", "Greyy the Lightningbearer", "Proviso", "Paprika", "Lunacub"]
 
 fourname = ["Haze", "Gitano", "Jessica", "Meteor", "Shirayuki", "Scavenger", "Vigna", "Dobermann", "Matoimaru", "Frostleaf", "Mousse", "Gravel", "Rope", "Myrrh", "Perfumer", "Matterhorn", "Cuora", "Gummy", "Deepcolor", "Earthspirit", "Shaw", "Beehunter", "Greyy", "Sussurro", "Myrtle", "Vermeil", "May", "Ambriel", "Utage", "Podenco", "Click", "Cutter", "Jaye", "Aciddrop", "Arene", "Bubble", "Jackie", "Pinecone", "Beanstalk", "Indigo", "Roberta", "Totter"]
 
